@@ -4,6 +4,10 @@ function getSimpsonsQuotes() {
 
     const url = "https://thesimpsonsquoteapi.glitch.me/quotes";
 
+    const messageHtml =  `<h5>There's a delay, because of the asynchronious request. Please, wait a few seconds more...</h5>`
+
+    document.querySelector('#the_simpsons').innerHTML = messageHtml;
+
     axios
         .get(url)
 
